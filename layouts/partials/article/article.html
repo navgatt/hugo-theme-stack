@@ -8,12 +8,4 @@
     {{ if or .Params.math .Site.Params.article.math }}
         {{ partialCached "article/components/math.html" . }}
     {{ end }}
-
-		{{ with .PrevInSection }}
-			<a href="{{ .RelPermalink }}">Previous</a>
-		{{ end }}
-
-		{{ with .NextInSection }}
-			<a href="{{ .RelPermalink }}">Next</a>
-		{{ end }}
 </article>
