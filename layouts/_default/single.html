@@ -44,9 +44,3 @@
 {{ define "right-sidebar" }}
     {{ if .Scratch.Get "hasWidget" }}{{ partial "sidebar/right.html" (dict "Context" . "Scope" "page") }}{{ end}}
 {{ end }}
-
-links:
-  - title: Previous Article
-    website: /post/prev
-  - title: Next Article
-    website: /post/next
